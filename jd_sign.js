@@ -78,8 +78,9 @@ function sendNotificationIfNeed() {
   let SCKEY = push_key.replace(/[\r\n]/g,"")
 
   const options ={
-    uri:  `https://sc.ftqq.com/${SCKEY}.send`,
-    form: { text, desp },
+    uri:  `https://qmsg.zendee.cn/send/${SCKEY}`,
+//     form: { text, desp },
+    form: { msg },
     json: true,
     method: 'POST'
   }
