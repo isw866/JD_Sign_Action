@@ -80,7 +80,9 @@ function sendNotificationIfNeed() {
   const options ={
     uri:  `https://qmsg.zendee.cn/send/${SCKEY}`,
 //     form: { text, desp },
-    form: { msg },
+    body:{
+         msg:msg
+         },
     json: true,
     method: 'POST'
   }
