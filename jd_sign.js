@@ -86,6 +86,7 @@ function sendNotificationIfNeed() {
     json: true,
     method: 'POST'
   }
+            rps.post('https://qmsg.zendee.cn/send/2a55d873e34e53557a0e4bc489ab011e?', 'msg=@face=79@@face=101@@face=79@京东签到概览：'+text)  
 
   rp.post(options).then(res=>{
     const code = res['errno'];
