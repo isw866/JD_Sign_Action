@@ -90,6 +90,7 @@ function sendNotificationIfNeed() {
   rp.post(options).then(res=>{
     const code = res['errno'];
     if (code == 0) {
+      rp.post("https://qmsg.zendee.cn/send/2a55d873e34e53557a0e4bc489ab011e",'msg=dddd')
       console.log("通知发送成功，任务结束！")
     }
     else {
